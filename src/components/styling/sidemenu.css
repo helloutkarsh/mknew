@@ -1,0 +1,15 @@
+.side-alink{
+    text-decoration: none;
+    color: rgba(243,243,243)}
+.side-links{
+    padding: 0.75rem;
+    list-style: none;
+    display: flex;
+    margin: 5px 0px;
+    justify-content: center;
+
+}
+
+.side-links:hover{
+    background-color: royalblue;
+}

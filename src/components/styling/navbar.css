@@ -1,0 +1,136 @@
+.navbar-container{
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    min-height: 50px;
+    position: fixed;
+    border-bottom: 2px solid rgba(71, 71, 71, 0);
+}
+.logo .logo-link{
+    text-decoration: none;
+    align-items: center;
+   display: flex;
+   font-size: 28px;
+   margin: 0 8px; 
+   color:rgb(243, 243, 243);
+}
+.logo{
+    align-self: center;
+}
+
+nav{
+    display: flex;
+}
+
+.navlinks{
+    align-items: center;
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+}
+
+.links{
+    list-style: none;
+}
+
+.logo-name{
+ margin: 0 8px;
+ font-family: 'Oleo Script', cursive;
+    
+
+}
+
+.alinks{
+    text-decoration: none;
+    color: rgb(243, 243, 243);
+    font-weight: 600;
+    padding: 17px;
+    
+}
+
+.side-menu-bar{
+    display: none;
+    width: 0%;
+    /* transform: translateX(100%); */
+    transition:all 3s ease-in-out;
+
+}
+
+.logo-link{
+
+}
+
+.alinks:hover{
+    background-color: royalblue;    
+   
+}
+
+.fa-graduation-cap{
+  animation: myanimation 5s infinite;
+    
+}
+@keyframes myanimation {
+    0% {color:rgb(228, 57, 57);}
+    25%{color:rgb(184, 184, 9);}
+    50%{color:rgb(223, 31, 197);}
+    75%{color:rgb(20, 138, 235);}
+    100% {color: rgb(228, 57, 57);}
+  }
+
+.menu-toggle{
+    color: white;
+    align-self: center;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .menu-toggle{
+        display: block;
+        margin-right: 40px;
+        
+    
+    }
+    .main-menu{
+        display: none;
+    }
+    .navlinks{
+        display: none;
+        
+    }
+    .logo{
+        margin: 0px 30px;
+    }
+    .navbar-container{
+        
+        justify-content: space-between;
+    }
+
+    
+    .active-menu{
+        display: block;
+        position: absolute;
+        background-color: rgb(10, 10, 10);
+        height: auto;
+        top: 50px;
+        right: 0;
+        margin-right: 15px;
+        width: 30%;
+        height: 100vh;
+        transition: transform 1s ease, top 1s ease;
+    }
+}
+
+
+.main-menu{
+    position: fixed;
+    z-index: 2;
+    margin: 10px 2.5rem;
+}
+
+.main-menu button{
+    padding: 5px;
+    border-radius: 4px;
+    background-color: royalblue;
+}
